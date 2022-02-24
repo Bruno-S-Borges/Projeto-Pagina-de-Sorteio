@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomes</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="titulo">Meu Sorteio</h1>
+
+        <p>Clique na Lixeira para remover um nome</p>
+
+        <div id="input">
+            <input type="text" name="" placeholder="Digite um nome para adicionar a lista de sorteio">
+            <button onclick="adicionar()">Adicionar</button>
+        </div>
+
+        <div class="lista">
+            <ul></ul>
+        </div> 
+
+        <div class="botoes">
+            <button onclick="sortear()">Sortear</button>
+            <button onclick="limpar()">Limpar</button>
+        </div>
+
+        <p>Quantidade de Pessoas: <span id="quant"></span></p>
+
+        <div id="nomesorteado">
+            <h1>Nome Sorteado: <span id="sorteado"></span></h1>
+        </div>
+
+        <a href="index.html"><button class="voltar">Voltar</button></a>
+          
+    </div>  
+    
+    <script src="scriptnomes.js"></script>
+</body>
+</html>
