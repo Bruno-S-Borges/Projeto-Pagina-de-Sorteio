@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Numeros</title>
+    <title>Sorteio de Números</title>
+    <link rel="stylesheet" href="stylenumeros.css">
 </head>
 <body>
     <div class="container">
 
-        <h1 class="titulo">Meu sorteio</h1>
+        <h1 class="titulo">Sorteio de Números</h1>
 
-        <h2>Sortear numero entre:</h2>
+        <p class="texto1">Sortear numero entre:</p>
 
-        <input id="min" type="number" min="0" placeholder="1">
-        <h2>E</h2>
-        <input id="max" type="number" min="0" placeholder="10">
+        <div class="input">
+            <input id="min" type="number" min="0" placeholder="1">
+            <h2>E</h2>
+            <input id="max" type="number" min="0" placeholder="10">
+        </div>
 
-        <div class="botoes">
-            <button onclick="sortearNumero()">Sortear</button>
-            <button onclick="limparNumero()">Limpar</button>
+        <div class="botoesNumeros">
+            <button class="botoes" onclick="sortearNumero()">Sortear</button>
+            <button class="botoes" onclick="limparNumero()">Limpar</button>
         </div>
 
         <div id="numerosorteado">
-            <h1>Numero Sorteado: <span id="nsorteado"></span></h1>
+            <h1>Numero Sorteado:<br><span id="nsorteado">...</span></h1>
         </div>
 
-        <a href="index.html"><button class="voltar">Voltar</button></a>
+        <a href="index.html"><button class="botoes">Voltar</button></a>
     </div>
 
     <script src="scriptnumeros.js"></script>

@@ -16,4 +16,5 @@ function sortearNumero(){
 function limparNumero(){
     elementoInputMax.value = ''
     elementoInputMin.value = ''
+    document.getElementById("nsorteado").innerHTML = "..."
 }

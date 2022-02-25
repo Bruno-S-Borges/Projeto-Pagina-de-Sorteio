@@ -53,6 +53,8 @@ function deletaNome(pos){
 
 function limpar(){
     pessoas.splice(0, pessoas.length);
+    document.getElementById("quant").innerHTML = 0
+    document.getElementById("sorteado").innerHTML = "..."
 
     mostraNomes()
 }
